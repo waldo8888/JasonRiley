@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200" aria-label="Jason Riley wordmark">
+  
+  <line x1="20" y1="32" x2="780" y2="32" stroke="#0E0E10" stroke-width="2"></line>
+  <text x="20" y="24" font-family="&#39;DM Mono&#39;,&#39;Courier New&#39;,ui-monospace,monospace" font-size="14" letter-spacing="2.8" fill="#0E0E10">EST. 1983 — HAMILTON, ONT.</text>
+  <text x="780" y="24" font-family="&#39;DM Mono&#39;,&#39;Courier New&#39;,ui-monospace,monospace" font-size="14" letter-spacing="2.8" fill="#0E0E10" text-anchor="end">№ 58 / OFFENSIVE GUARD</text>
+
+  
+  <text x="400" y="138" font-family="&#39;Anton&#39;,&#39;Oswald&#39;,&#39;Impact&#39;,sans-serif" font-weight="400" font-size="96" letter-spacing="-1" fill="#0E0E10" text-anchor="middle" text-rendering="geometricPrecision">JASON RILEY</text>
+
+  
+  <line x1="20" y1="160" x2="780" y2="160" stroke="#0E0E10" stroke-width="2"></line>
+  <text x="20" y="184" font-family="&#39;DM Mono&#39;,&#39;Courier New&#39;,ui-monospace,monospace" font-size="14" letter-spacing="2.8" fill="#0E0E10">COACH · CHAMPION · AUTHOR</text>
+  <text x="780" y="184" font-family="&#39;DM Mono&#39;,&#39;Courier New&#39;,ui-monospace,monospace" font-size="14" letter-spacing="2.8" fill="#0E0E10" text-anchor="end">CFL GREY CUP — 1986</text>
+</svg>
