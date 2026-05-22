@@ -59,10 +59,12 @@ export default function HeroPoster() {
     <section
       id="hero"
       ref={sectionRef}
-      className="relative bg-ink-900 text-chalk overflow-hidden grain-ink h-[calc(100svh-7rem)] min-h-[640px] flex flex-col"
+      className="relative bg-ink-900 text-chalk overflow-hidden grain-ink h-[100svh] -mt-16 min-h-[680px] flex flex-col"
     >
-      {/* TOP — statline + gold rule */}
-      <div className="container-page pt-6 md:pt-8">
+      {/* TOP — statline + gold rule.
+          pt-[7.5rem] sits content below the banner (44px) + nav (68px) chrome
+          that overlays the top of this full-bleed hero. */}
+      <div className="container-page pt-[7.5rem] md:pt-[8rem]">
         <Reveal kind="fade-up" immediate duration={500}>
           <Statline
             items={["Est. 1983 — Hamilton, Ont.", "№ 58 / Offensive Guard"]}
@@ -155,7 +157,7 @@ export default function HeroPoster() {
       </div>
 
       {/* BOTTOM — bottom statline + scroll cue */}
-      <div className="container-page pb-5 md:pb-8 relative">
+      <div className="container-page pb-6 md:pb-8 relative">
         <Reveal
           kind="rule-wipe"
           immediate
