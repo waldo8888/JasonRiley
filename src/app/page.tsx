@@ -7,7 +7,6 @@ import ColumnBlock from "@/components/blocks/ColumnBlock";
 import Section from "@/components/atoms/Section";
 import SectionHead from "@/components/atoms/SectionHead";
 import Button from "@/components/atoms/Button";
-import SectionWipe from "@/components/motion/SectionWipe";
 import ChapterIndicator from "@/components/chrome/ChapterIndicator";
 
 const chapters = [
@@ -47,10 +46,6 @@ export default function HomePage() {
         />
         <BookCallout />
       </Section>
-
-      {/* Cinematic wipe: ink panel sweeps in over the book section,
-          revealing the camp callout below. */}
-      <SectionWipe color="ink" label="Up next — the camp" />
 
       <Section variant="ink-50" id="camp">
         <SectionHead
