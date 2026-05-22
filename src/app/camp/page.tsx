@@ -113,7 +113,7 @@ export default function CampPage() {
               <span className="text-gold-400">Read the front.</span>
             </h2>
             <p className="font-serif italic text-chalk/82 text-[17px] leading-[1.6] mt-4 max-w-[480px]">
-              The first play we install. Eight ways to run it. We'll work
+              The first play we install. Eight ways to run it. We&apos;ll work
               through them all by Friday afternoon.
             </p>
           </div>
@@ -139,7 +139,7 @@ export default function CampPage() {
           <p className="font-serif text-[17px] leading-[1.6] text-fg-2 mt-3">
             The full registration flow lives in the sibling Up-Front Camp
             kit. For the pitch demo, this page anchors the camp inside
-            Jason's personal site and points to the camp's own home.
+            Jason&apos;s personal site and points to the camp&apos;s own home.
           </p>
           <div className="mt-6 flex flex-wrap gap-3 justify-center">
             <Button kind="gold">Open registration ↗</Button>

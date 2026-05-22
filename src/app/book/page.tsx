@@ -74,7 +74,7 @@ export default function BookPage() {
         <Reveal>
           <Overline>From the Prologue · Page 3</Overline>
           <h2 className="font-display uppercase leading-[1.1] tracking-[-0.01em] m-0 mt-2 text-[clamp(36px,5.5vw,56px)]">
-            The Hit That Didn't Happen
+            The Hit That Didn&apos;t Happen
           </h2>
           <Rule kind="ink" />
           <div
@@ -85,18 +85,18 @@ export default function BookPage() {
           >
             <p className="m-0 mb-4 first-of-type:first-letter:font-display first-of-type:first-letter:text-[84px] first-of-type:first-letter:leading-[0.85] first-of-type:first-letter:float-left first-of-type:first-letter:pr-2.5 first-of-type:first-letter:pt-1 first-of-type:first-letter:text-maroon-500">
               Hamilton, third quarter, snow already in the air the way it gets
-              in late November when the season's about to swallow itself.
+              in late November when the season&apos;s about to swallow itself.
               Grover comes off the edge full speed — and what happens in the
               next half-second is the rest of my career.
             </p>
             <p className="m-0 mb-4">
               I get my hands inside. I drop my hips. The guy outweighs me by
-              twenty pounds and he's mad about something I have nothing to
-              do with. I'm twenty-three years old and I don't know yet that
+              twenty pounds and he&apos;s mad about something I have nothing to
+              do with. I&apos;m twenty-three years old and I don&apos;t know yet that
               this is the moment I become a left tackle for a living.
             </p>
             <p className="m-0 mb-4">
-              Mad Dog wasn't a nickname. It was a warning label. Taming him
+              Mad Dog wasn&apos;t a nickname. It was a warning label. Taming him
               took longer than my career did, and the chapters that follow
               are mostly about that — the man, not the player, and the long
               walk between the two of them.

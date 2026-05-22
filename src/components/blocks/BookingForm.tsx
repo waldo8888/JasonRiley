@@ -13,7 +13,7 @@ export default function BookingForm() {
         <div className="py-10 text-center">
           <Overline>Message Sent</Overline>
           <h3 className="font-display uppercase text-[40px] sm:text-[44px] m-0 mt-2 mb-3 leading-none">
-            Thanks — I'll be in touch.
+            Thanks — I&apos;ll be in touch.
           </h3>
           <p className="font-serif italic text-fg-2 m-0">
             Usually within 48 hours. Faster if you mention the camp.

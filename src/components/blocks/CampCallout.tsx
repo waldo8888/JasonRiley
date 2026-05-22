@@ -21,7 +21,7 @@ export default function CampCallout() {
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Button kind="gold" href="/camp">
-            Register · Camp '26
+            Register · Camp &apos;26
           </Button>
           <Link
             href="/camp#staff"

@@ -59,10 +59,10 @@ export default function AboutPage() {
               <p className="m-0">
                 The Grey Cup was 1986, which is the year people remember.
                 CFL All-Canadian came in 1989. The body let me know it was
-                time in '93 and I didn't argue.
+                time in &apos;93 and I didn&apos;t argue.
               </p>
               <p className="m-0">
-                Since then I've been coaching offensive linemen — first at
+                Since then I&apos;ve been coaching offensive linemen — first at
                 clinics around southern Ontario, now at McMaster University.
                 I run the <strong>Up-Front Lineman Camp</strong> every
                 summer for high-school players, and I chair the CFL Alumni
@@ -70,8 +70,8 @@ export default function AboutPage() {
                 matters to me happens now.
               </p>
               <p className="m-0">
-                The book came out in 2023. It's called{" "}
-                <em>Taming Mad Dog</em>. It's about the position, the man,
+                The book came out in 2023. It&apos;s called{" "}
+                <em>Taming Mad Dog</em>. It&apos;s about the position, the man,
                 and the long walk between the two of them.
               </p>
             </div>

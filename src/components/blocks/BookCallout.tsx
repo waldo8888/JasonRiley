@@ -31,7 +31,7 @@ export default function BookCallout() {
           Mad Dog
         </h3>
         <p className="font-serif italic text-[20px] md:text-[22px] leading-[1.4] text-fg-2 my-4 max-w-[520px]">
-          “Mad Dog wasn't a nickname. It was a warning label. Taming him took
+          “Mad Dog wasn&apos;t a nickname. It was a warning label. Taming him took
           longer than my career did.”
         </p>
         <div className="flex flex-wrap gap-3">

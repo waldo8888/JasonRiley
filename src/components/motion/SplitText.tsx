@@ -17,6 +17,8 @@ interface SplitTextProps {
   stagger?: number;
   /** Per-token duration in ms. */
   duration?: number;
+  /** Vertical reveal offset in px. */
+  y?: number;
   /** Fire immediately on mount instead of waiting for intersection. */
   immediate?: boolean;
   /** Inline style. */
@@ -42,6 +44,7 @@ export default function SplitText({
   delay = 0,
   stagger = 60,
   duration = 700,
+  y = 28,
   immediate = false,
   style,
 }: SplitTextProps) {
@@ -61,7 +64,7 @@ export default function SplitText({
       tokens.forEach((t, i) => {
         t.animate(
           [
-            { opacity: 0, transform: "translate3d(0, 28px, 0)" },
+            { opacity: 0, transform: `translate3d(0, ${y}px, 0)` },
             { opacity: 1, transform: "translate3d(0, 0, 0)" },
           ],
           {
@@ -98,7 +101,7 @@ export default function SplitText({
     );
     io.observe(el);
     return () => io.disconnect();
-  }, [delay, stagger, duration, immediate]);
+  }, [delay, stagger, duration, immediate, y]);
 
   const tokens = by === "word" ? text.split(/(\s+)/) : Array.from(text);
 
