@@ -43,7 +43,19 @@ export default function SiteFooter() {
 
         <div className="mt-12 pt-4 border-t border-chalk/18 flex flex-wrap justify-between gap-2 font-mono text-[11px] tracking-[0.18em] uppercase text-chalk/55">
           <span>© Jason Riley · Hamilton, Ontario</span>
-          <span>Site by the lineman · Site for the linemen</span>
+          <span className="flex items-center gap-1.5">
+            Made with{" "}
+            <span aria-hidden="true" className="text-base leading-none">❤️</span>
+            <span className="sr-only">love</span>
+            <a
+              href="https://zailaai.com"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gold-400 hover:text-gold-300 no-underline tracking-[0.18em]"
+            >
+              Zaila AI Designs
+            </a>
+          </span>
         </div>
       </div>
     </footer>

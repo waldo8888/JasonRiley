@@ -65,43 +65,49 @@ export default function SiteNav() {
             Buy the Book ↗
           </Link>
 
-          {/* Mobile drawer (handled below) */}
-
           {/* Mobile hamburger */}
           <button
             type="button"
-            aria-label="Open menu"
+            aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
+            aria-controls="mobile-nav-drawer"
             onClick={() => setOpen((v) => !v)}
-            className="md:hidden inline-flex items-center justify-center w-10 h-10 border border-ink-900 rounded-[2px]"
+            className={cn(
+              "md:hidden relative inline-flex items-center justify-center",
+              "w-11 h-11 border border-ink-900 rounded-[2px] bg-paper",
+              "transition-colors duration-150 hover:bg-paper-bright active:bg-chalk"
+            )}
           >
-            <span
-              className={cn(
-                "block w-5 h-[2px] bg-ink-900 transition-transform",
-                open && "translate-y-[1px] rotate-45"
-              )}
-            />
-            <span
-              className={cn(
-                "block w-5 h-[2px] bg-ink-900 transition-transform absolute",
-                open && "-rotate-45"
-              )}
-              style={!open ? { marginTop: 7 } : undefined}
-            />
-            <span
-              className={cn(
-                "block w-5 h-[2px] bg-ink-900 transition-opacity",
-                open ? "opacity-0" : "opacity-100"
-              )}
-              style={!open ? { marginTop: 14 } : undefined}
-            />
+            <span aria-hidden="true" className="relative block w-5 h-[14px]">
+              <span
+                className={cn(
+                  "absolute left-0 right-0 h-[2px] bg-ink-900",
+                  "transition-all duration-200 ease-[cubic-bezier(0.2,0.7,0.2,1)]",
+                  open ? "top-1/2 -translate-y-1/2 rotate-45" : "top-0 rotate-0"
+                )}
+              />
+              <span
+                className={cn(
+                  "absolute left-0 right-0 top-1/2 -translate-y-1/2 h-[2px] bg-ink-900",
+                  "transition-opacity duration-150",
+                  open ? "opacity-0" : "opacity-100"
+                )}
+              />
+              <span
+                className={cn(
+                  "absolute left-0 right-0 h-[2px] bg-ink-900",
+                  "transition-all duration-200 ease-[cubic-bezier(0.2,0.7,0.2,1)]",
+                  open ? "top-1/2 -translate-y-1/2 -rotate-45" : "bottom-0 rotate-0"
+                )}
+              />
+            </span>
           </button>
         </div>
       </div>
 
       {/* Mobile drawer */}
       {open && (
-        <div className="md:hidden border-t border-ink-900 bg-paper">
+        <div id="mobile-nav-drawer" className="md:hidden border-t border-ink-900 bg-paper">
           <div className="container-page py-4 flex flex-col gap-3 font-mono text-[15px] tracking-[0.04em]">
             {navLinks.map((l) => (
               <Link
