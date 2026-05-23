@@ -83,19 +83,22 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      {/* Cinematic banner — chapter break between the bio and the career table */}
+      {/* Cinematic banner — chapter break between the bio and the career table.
+          Uses the front-on studio portrait (different angle from the hero's
+          contemplative side-glance) so the page shows two distinct moments
+          of the same man. */}
       <section
-        aria-label="Portrait of Jason Riley"
+        aria-label="Studio portrait of Jason Riley"
         className="relative w-full bg-ink-900 grain-ink overflow-hidden"
       >
         <Reveal kind="clip-down" duration={1100}>
-          <div className="relative w-full aspect-[21/9] md:aspect-[21/8] max-h-[78svh]">
+          <div className="relative w-full aspect-[16/9] md:aspect-[5/2] max-h-[78svh]">
             <Image
-              src="/images/photos/riley-portrait-cinematic.png"
-              alt="Studio portrait of Jason Riley in a Hamilton Tiger-Cats Alumni cap"
+              src="/images/photos/riley-portrait-studio.png"
+              alt="Studio portrait of Jason Riley wearing a Hamilton Tiger-Cats Alumni cap"
               fill
               sizes="100vw"
-              className="object-cover object-[center_30%] duotone"
+              className="object-cover object-[center_22%] duotone"
               priority={false}
             />
             {/* Subtle bottom gradient so the caption reads cleanly on any photo */}
