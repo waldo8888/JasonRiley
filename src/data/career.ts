@@ -32,12 +32,12 @@ export const columns = [
     href: "/coaching#book",
   },
   {
-    tag: "Podcast",
-    title: "Ticats Today · Book Launch",
+    tag: "Podcast · Episode 58",
+    title: "Bullying and Resilience",
     body:
-      "Jason on the Ticats Today podcast the day Taming Mad Dog dropped — the path from the trenches to the page, with a Hamilton lens.",
-    meta: "Listen · Sept 14, 2023",
-    href: "https://www.ivoox.com/en/ticats-today-september-14th-2023-audios-mp3_rf_116044026_1.html",
+      "Jason joined Can We Talk? for a conversation on bullying, social-emotional learning, physical literacy, and resilience — and yes, episode 58.",
+    meta: "Listen",
+    href: "https://canwetalkconversationsinearlychildhoodeducation.buzzsprout.com/1824011/episodes/18864330-episode-58-a-conversation-with-jason-riley-on-bullying-and-resilience",
   },
   {
     tag: "From the Book",
