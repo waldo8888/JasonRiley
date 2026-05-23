@@ -33,11 +33,11 @@ export const columns = [
   },
   {
     tag: "Podcast",
-    title: "Bullying and Resilience",
+    title: "Ticats Today · Book Launch",
     body:
-      "Jason joined Can We Talk? to discuss bullying, social-emotional learning, physical literacy, and resilience.",
-    meta: "Listen",
-    href: "https://tunein.com/podcasts/Arts--Culture-Podcasts/Can-We-Talk-Conversations-In-Early-Childhood-Education-p2178186/",
+      "Jason on the Ticats Today podcast the day Taming Mad Dog dropped — the path from the trenches to the page, with a Hamilton lens.",
+    meta: "Listen · Sept 14, 2023",
+    href: "https://www.ivoox.com/en/ticats-today-september-14th-2023-audios-mp3_rf_116044026_1.html",
   },
   {
     tag: "From the Book",
