@@ -9,7 +9,7 @@
     "lint": "eslint ."
   },
   "engines": {
-    "node": "^22.13.0 || >=24"
+    "node": "^22.13.0 || >=24 <25"
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",

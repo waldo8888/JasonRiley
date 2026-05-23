@@ -17,7 +17,7 @@ This is the pitch-demo build — a full multi-page site with cinematic scroll ch
 | Images | `next/image` |
 | Analytics | Vercel Web Analytics + booking inquiry conversion event |
 
-Local development is pinned to **Node 22.x** via `.nvmrc`; `package.json#engines` also allows Vercel's Node 24 runtime while excluding Node 23.
+Local development is pinned to **Node 22.x** via `.nvmrc`; `package.json#engines` also allows Vercel's Node 24 runtime while excluding Node 23 and future majors.
 
 ## Design system
 
