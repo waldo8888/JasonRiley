@@ -83,6 +83,36 @@ export default function AboutPage() {
         </div>
       </Section>
 
+      {/* Cinematic banner — chapter break between the bio and the career table */}
+      <section
+        aria-label="Portrait of Jason Riley"
+        className="relative w-full bg-ink-900 grain-ink overflow-hidden"
+      >
+        <Reveal kind="clip-down" duration={1100}>
+          <div className="relative w-full aspect-[21/9] md:aspect-[21/8] max-h-[78svh]">
+            <Image
+              src="/images/photos/riley-portrait-cinematic.png"
+              alt="Studio portrait of Jason Riley in a Hamilton Tiger-Cats Alumni cap"
+              fill
+              sizes="100vw"
+              className="object-cover object-[center_30%] duotone"
+              priority={false}
+            />
+            {/* Subtle bottom gradient so the caption reads cleanly on any photo */}
+            <div
+              aria-hidden="true"
+              className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-ink-900/85 via-ink-900/30 to-transparent"
+            />
+            <div className="absolute inset-x-0 bottom-0 container-page pb-6 md:pb-10">
+              <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-2 font-mono text-[11px] tracking-[0.20em] uppercase text-chalk/70">
+                <span>Studio portrait · Hamilton, Ontario</span>
+                <span className="text-chalk/55">№ 58 · Tiger-Cats Alumni</span>
+              </div>
+            </div>
+          </div>
+        </Reveal>
+      </section>
+
       <Section variant="ink-50">
         <SectionHead overline="The Career" title="Season by Season" />
         <Reveal>
