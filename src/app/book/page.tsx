@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Statline from "@/components/atoms/Statline";
 import Overline from "@/components/atoms/Overline";
@@ -29,51 +30,70 @@ export default function BookPage() {
             "repeating-linear-gradient(135deg, transparent 0 26px, rgba(0,0,0,0.04) 26px 27px)",
         }}
       >
-        <div className="container-page">
-          <Reveal>
-            <Statline
-              inverse
-              items={["A Football Memoir", "310 pp · Paperback", "ISBN 9781738031108"]}
+        <div className="container-page grid md:grid-cols-[1fr_minmax(220px,300px)] gap-10 md:gap-12 lg:gap-16 items-center">
+          <div className="md:order-1 order-2">
+            <Reveal>
+              <Statline
+                inverse
+                items={["A Football Memoir", "310 pp · Paperback", "ISBN 9781738031108"]}
+              />
+            </Reveal>
+            <Rule kind="gold" className="my-2.5" />
+            <SplitText
+              text="Taming"
+              as="h1"
+              className="font-display uppercase leading-[0.92] m-0 text-[clamp(64px,12vw,160px)]"
+              stagger={0.06}
+              y={28}
             />
-          </Reveal>
-          <Rule kind="gold" className="my-2.5" />
-          <SplitText
-            text="Taming"
-            as="h1"
-            className="font-display uppercase leading-[0.92] m-0 text-[clamp(64px,14vw,180px)]"
-            stagger={0.06}
-            y={28}
-          />
-          <SplitText
-            text="the Mad Dog"
-            as="div"
-            className="font-serif italic font-medium leading-[0.95] mt-1 text-[clamp(48px,11vw,140px)] text-chalk/85"
-            stagger={0.04}
-            delay={300}
-            y={24}
-          />
-          <Reveal delay={600}>
-            <p className="font-serif italic text-[20px] md:text-[22px] leading-[1.4] max-w-[560px] mt-4">
-              By Jason Riley. A story from football&apos;s trenches into the
-              deeper work of resilience, bullying prevention, mental health,
-              spiritual growth, and purpose.
-            </p>
-            <div className="flex flex-wrap gap-3 mt-7">
-              <Button
-                kind="inverse"
-                href="https://www.lulu.com/shop/jason-riley/taming-mad-dog/paperback/product-v625mk.html"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Buy Paperback ↗
-              </Button>
-              <Link
-                href="#inside"
-                className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-transparent text-chalk border border-chalk rounded-[2px] font-headline font-semibold uppercase text-[14px] tracking-[0.10em] hover:bg-chalk/10 transition-colors"
-              >
-                What It Covers
-              </Link>
-            </div>
+            <SplitText
+              text="the Mad Dog"
+              as="div"
+              className="font-serif italic font-medium leading-[0.95] mt-1 text-[clamp(48px,9vw,120px)] text-chalk/85"
+              stagger={0.04}
+              delay={300}
+              y={24}
+            />
+            <Reveal delay={600}>
+              <p className="font-serif italic text-[20px] md:text-[22px] leading-[1.4] max-w-[560px] mt-4">
+                By Jason Riley. A story from football&apos;s trenches into the
+                deeper work of resilience, bullying prevention, mental health,
+                spiritual growth, and purpose.
+              </p>
+              <div className="flex flex-wrap gap-3 mt-7">
+                <Button
+                  kind="inverse"
+                  href="https://www.lulu.com/shop/jason-riley/taming-mad-dog/paperback/product-v625mk.html"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Buy Paperback ↗
+                </Button>
+                <Link
+                  href="#inside"
+                  className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-transparent text-chalk border border-chalk rounded-[2px] font-headline font-semibold uppercase text-[14px] tracking-[0.10em] hover:bg-chalk/10 transition-colors"
+                >
+                  What It Covers
+                </Link>
+              </div>
+            </Reveal>
+          </div>
+
+          <Reveal
+            kind="slide-x"
+            duration={700}
+            delay={200}
+            className="relative aspect-[2/3] w-full max-w-[280px] md:max-w-none mx-auto md:mx-0 md:order-2 order-1"
+            style={{ boxShadow: "var(--shadow-poster)" }}
+          >
+            <Image
+              src="/images/photos/book-taming-mad-dog-cover.jpg"
+              alt="Taming Mad Dog book cover — a football memoir by Jason Riley"
+              fill
+              sizes="(min-width: 768px) 300px, 280px"
+              className="object-cover"
+              priority
+            />
           </Reveal>
         </div>
       </section>
