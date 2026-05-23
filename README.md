@@ -1,6 +1,6 @@
 # Jason Riley — Personal Site
 
-Personal-brand and speaking website for **Jason "Mad Dog" Riley** — former CFL offensive guard (Hamilton Tiger-Cats, № 58), 1986 Grey Cup champion, McMaster O-line coach, founder of the Up-Front Lineman Camp, author of *Taming Mad Dog* (2023).
+Personal-brand and speaking website for **Jason "Mad Dog" Riley** — former CFL offensive guard, Hamilton Tiger-Cats № 58, 1986 Grey Cup champion, McMaster O-line coach, youth speaker, and author of *Taming Mad Dog* (2023).
 
 This is the pitch-demo build — a full multi-page site with cinematic scroll choreography, aimed at winning the engagement.
 
@@ -32,8 +32,8 @@ The visual language is ported from the **Jason Riley Design System** bundle (han
 
 | Route | Purpose |
 |---|---|
-| `/` | Home — hero poster, stats, then-and-now strip, book callout, camp callout, columns |
-| `/book` | *Taming Mad Dog* — maroon poster hero, prologue excerpt, praise grid |
+| `/` | Home — hero poster, stats, then-and-now strip, book callout, camp callout, speaking/press cards |
+| `/book` | *Taming Mad Dog* — maroon poster hero, prologue excerpt, book themes grid |
 | `/about` | Long-form bio + season-by-season career table |
 | `/coaching` | Speaking tiles, recent appearances, booking form |
 | `/camp` | Up-Front Lineman Camp landing + curriculum |
@@ -47,13 +47,15 @@ Old-school CFL almanac × coach's playbook × memoir warmth. Tiger gold accent o
 - Jersey **№ 58**
 - Position **Offensive Guard**
 - College **UBC Thunderbirds № 76**
-- Hamilton Tiger-Cats, 11 seasons (1983–93)
-- 1986 Grey Cup champion · 1989 CFL All-Canadian
+- 11-year CFL career: Winnipeg, Saskatchewan, Hamilton
+- Hamilton Tiger-Cats, 1984–93
+- 1986 Grey Cup champion · 1989 CFL All-Star
+- CFL East All-Star: 1986, 1988, 1989, 1992
 
 ## Run
 
 ```bash
-npm install --legacy-peer-deps   # gsap/react peer-dep workaround
+npm install
 npm run dev                      # http://localhost:3000 (3001 if 3000 busy)
 ```
 

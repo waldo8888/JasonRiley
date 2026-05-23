@@ -52,27 +52,28 @@ export default function AboutPage() {
           <Reveal delay={50}>
             <div className="font-serif text-[18px] leading-[1.7] space-y-4">
               <p className="m-0">
-                I came out of UBC and was drafted by Hamilton in 1983. Eleven
-                seasons in pads after that — all of them with the Tiger-Cats,
-                most of them at offensive guard, jersey № 58.
+                I came out of UBC and was drafted seventh overall by Winnipeg
+                in 1983. The CFL road moved through Winnipeg and Saskatchewan
+                before Hamilton became home in 1984.
               </p>
               <p className="m-0">
-                The Grey Cup was 1986, which is the year people remember.
-                CFL All-Canadian came in 1989. The body let me know it was
-                time in &apos;93 and I didn&apos;t argue.
+                The Tiger-Cats years ran through 1993, most of them at
+                offensive guard, jersey № 58. The Grey Cup was 1986, which is
+                the year people remember. CFL All-Star came in 1989, with four
+                East All-Star seasons along the way.
               </p>
               <p className="m-0">
-                Since then I&apos;ve been coaching offensive linemen — first at
-                clinics around southern Ontario, now at McMaster University.
-                I run the <strong>Up-Front Lineman Camp</strong> every
-                summer for high-school players, and I chair the CFL Alumni
-                Association board, which is where most of the work that
-                matters to me happens now.
+                Since then I&apos;ve taught, coached offensive linemen, worked with
+                young athletes, and stayed active with the Hamilton and CFL
+                alumni communities. I serve on the CFL Alumni Association Board
+                of Directors, where former players and the next generation stay
+                connected.
               </p>
               <p className="m-0">
                 The book came out in 2023. It&apos;s called{" "}
-                <em>Taming Mad Dog</em>. It&apos;s about the position, the man,
-                and the long walk between the two of them.
+                <em>Taming Mad Dog</em>. It&apos;s about football from the trenches,
+                bullying prevention, resilience, mental health, and the long
+                walk between the player and the man.
               </p>
             </div>
           </Reveal>

@@ -24,7 +24,7 @@ export default function BookCallout() {
       </Reveal>
 
       <Reveal kind="fade-up" delay={120} duration={650}>
-        <Overline>A Football Memoir · 2023 · With Steve Milton</Overline>
+        <Overline>A Football Memoir · 2023 · Jason Riley</Overline>
         <h3 className="font-display uppercase leading-[0.95] m-0 mt-2 text-[clamp(48px,8vw,72px)]">
           Taming
           <br />
@@ -36,16 +36,21 @@ export default function BookCallout() {
         </p>
         <div className="flex flex-wrap gap-3">
           <Button href="/book">Read the chapter</Button>
-          <Button kind="secondary" href="#order">
-            Order — $32 CAD
+          <Button
+            kind="secondary"
+            href="https://www.lulu.com/shop/jason-riley/taming-mad-dog/paperback/product-v625mk.html"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Order Paperback ↗
           </Button>
         </div>
         <Rule className="mt-6 mb-2" />
         <Statline
           items={[
-            "320 pages · Hardcover",
-            "ECW Press",
-            "Foreword: Pinball Clemons",
+            "310 pages · Paperback",
+            "ISBN 9781738031108",
+            "Published Aug. 15, 2023",
           ]}
         />
       </Reveal>

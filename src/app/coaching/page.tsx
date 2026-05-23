@@ -7,16 +7,16 @@ import BookingForm from "@/components/blocks/BookingForm";
 import { speakingTiles, recentAppearances } from "@/data/career";
 
 export const metadata = {
-  title: "Coaching · Speaking · Clinics — Jason Riley",
+  title: "Speaking · Coaching · Clinics — Jason Riley",
   description:
-    "Bring me in. Keynote, clinic, event, media. About thirty of these a year.",
+    "Bring Jason Riley in for youth empowerment, anti-bullying, resilience, physical literacy, team culture, and football clinics.",
 };
 
 export default function CoachingPage() {
   return (
     <Section noBorder>
       <Reveal>
-        <Overline>Coaching · Speaking · Clinics</Overline>
+        <Overline>Speaking · Coaching · Clinics</Overline>
       </Reveal>
       <h1 className="font-display uppercase leading-[0.95] tracking-[-0.02em] m-0 mt-2 text-[clamp(56px,11vw,120px)]">
         <SplitText text="Bring me" as="span" className="block" />
@@ -24,10 +24,10 @@ export default function CoachingPage() {
       </h1>
       <Reveal delay={200}>
         <p className="font-serif italic text-[20px] md:text-[22px] leading-[1.4] text-fg-2 max-w-[620px] m-0 mt-3">
-          High-school programs, university clinics, corporate keynotes,
-          alumni events, book talks. I do about thirty of these a year and
-          I like the ones where the lights are dim and the room is full of
-          linemen.
+          Schools, sport organizations, coach clinics, alumni rooms, book
+          events, and community programs. The work is youth empowerment,
+          anti-bullying, resilience, physical literacy, team culture, and the
+          stories that connect football to real life.
         </p>
       </Reveal>
       <Rule kind="ink" />

@@ -24,10 +24,10 @@ export default function CampCallout() {
             Register · Camp &apos;26
           </Button>
           <Link
-            href="/camp#staff"
+            href="/camp#register"
             className="inline-flex items-center gap-2 py-2 border-b-2 border-chalk text-chalk font-headline font-semibold uppercase text-[14px] tracking-[0.10em] hover:text-gold-400 hover:border-gold-400 transition-colors"
           >
-            Coaching staff
+            Camp details
           </Link>
         </div>
       </Reveal>

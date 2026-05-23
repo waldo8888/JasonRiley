@@ -15,7 +15,7 @@ const chapters = [
   { id: "then-and-now", label: "Then & Now" },
   { id: "book", label: "The Book" },
   { id: "camp", label: "The Camp" },
-  { id: "columns", label: "From the Trenches" },
+  { id: "columns", label: "Speaking" },
 ];
 
 export default function HomePage() {
@@ -62,11 +62,11 @@ export default function HomePage() {
 
       <Section id="columns">
         <SectionHead
-          overline="Writing & Press"
-          title="From the Trenches"
+          overline="Speaking & Press"
+          title="The Work Now"
           action={
-            <Button kind="ghost" href="/about#press">
-              All columns →
+            <Button kind="ghost" href="/coaching#recent">
+              Recent →
             </Button>
           }
         />

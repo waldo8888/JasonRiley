@@ -11,7 +11,7 @@ import Reveal from "@/components/motion/Reveal";
 export const metadata = {
   title: "Taming Mad Dog — A Football Memoir · Jason Riley",
   description:
-    "By Jason Riley with Steve Milton. The story behind eleven seasons, one Grey Cup, and the long road back to my own name.",
+    "By Jason Riley. A football memoir about the trenches, bullying prevention, mental health, resilience, and purpose.",
 };
 
 export default function BookPage() {
@@ -30,7 +30,7 @@ export default function BookPage() {
           <Reveal>
             <Statline
               inverse
-              items={["A Football Memoir", "320 pp · Hardcover", "ECW Press · 2023"]}
+              items={["A Football Memoir", "310 pp · Paperback", "ISBN 9781738031108"]}
             />
           </Reveal>
           <Rule kind="gold" className="my-2.5" />
@@ -51,18 +51,24 @@ export default function BookPage() {
           />
           <Reveal delay={600}>
             <p className="font-serif italic text-[20px] md:text-[22px] leading-[1.4] max-w-[560px] mt-4">
-              By Jason Riley with Steve Milton. The story behind eleven
-              seasons, one Grey Cup, and the long road back to my own name.
+              By Jason Riley. A story from football&apos;s trenches into the
+              deeper work of resilience, bullying prevention, mental health,
+              spiritual growth, and purpose.
             </p>
             <div className="flex flex-wrap gap-3 mt-7">
-              <Button kind="inverse" href="#order">
-                Buy hardcover — $32 CAD ↗
+              <Button
+                kind="inverse"
+                href="https://www.lulu.com/shop/jason-riley/taming-mad-dog/paperback/product-v625mk.html"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Buy Paperback ↗
               </Button>
               <Link
-                href="#audio"
+                href="#inside"
                 className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-transparent text-chalk border border-chalk rounded-[2px] font-headline font-semibold uppercase text-[14px] tracking-[0.10em] hover:bg-chalk/10 transition-colors"
               >
-                Audiobook — Read by Jason
+                What It Covers
               </Link>
             </div>
           </Reveal>
@@ -112,21 +118,21 @@ export default function BookPage() {
       </Section>
 
       {/* Praise grid */}
-      <Section variant="ink-50">
-        <SectionHead overline="Praise" title="What People Said" />
+      <Section variant="ink-50" id="inside">
+        <SectionHead overline="Inside the Book" title="What It Covers" />
         <div className="grid md:grid-cols-3 gap-6">
           {[
             {
-              q: "“A blue-collar memoir from the guy who held the line. Honest and very funny.”",
-              a: "The Globe and Mail",
+              q: "Raw-bones football from the trenches, written for both new fans and people who already understand line play.",
+              a: "Football",
             },
             {
-              q: "“Riley writes like he played — low and hard. You don't see the work until you're past it.”",
-              a: "Pinball Clemons, in the foreword",
+              q: "Bullying prevention, inclusiveness, resilience, mental health, and spiritual growth are central themes.",
+              a: "Youth",
             },
             {
-              q: "“The best CFL book in twenty years. Period.”",
-              a: "The Hamilton Spectator",
+              q: "The journey moves from childhood to championships, teaching, coaching, family, and community service.",
+              a: "Purpose",
             },
           ].map((p, i) => (
             <Reveal key={i} delay={i * 0.08}>

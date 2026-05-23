@@ -23,16 +23,16 @@ export const footerColumns: { title: string; items: { label: string; href: strin
       { label: "Taming Mad Dog", href: "/book" },
       { label: "Up-Front Camp", href: "/camp" },
       { label: "Speaking", href: "/coaching" },
-      { label: "Alumni Board", href: "/coaching#alumni" },
+      { label: "CFLAA Board", href: "https://www.cflaa.ca/board-of-directors/" },
     ],
   },
   {
     title: "The Story",
     items: [
       { label: "Career", href: "/about" },
-      { label: "Press", href: "/about#press" },
-      { label: "Photo Archive", href: "/about#archive" },
-      { label: "Columns", href: "/#columns" },
+      { label: "Recent", href: "/coaching#recent" },
+      { label: "Book", href: "/book" },
+      { label: "Speaking Topics", href: "/#columns" },
     ],
   },
   {
@@ -40,12 +40,12 @@ export const footerColumns: { title: string; items: { label: string; href: strin
     items: [
       { label: "Booking", href: "/coaching#book" },
       { label: "Camp Inquiry", href: "/camp" },
-      { label: "Media", href: "/coaching#media" },
-      { label: "Newsletter", href: "#newsletter" },
+      { label: "Media", href: "/coaching#recent" },
+      { label: "Book Event", href: "/coaching#book" },
     ],
   },
 ];
 
 export const footerTagline = "Coach · Champion · Author · № 58";
 export const footerBlurb =
-  "Eleven seasons up front for the Hamilton Tiger-Cats. One Grey Cup. Now coaching the next ones who play the position nobody clips.";
+  "An 11-year CFL career, a 1986 Grey Cup with Hamilton, and a lifetime teaching, speaking, coaching, and serving the football community.";

@@ -40,13 +40,13 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jason Riley — Coach · Champion · Author · № 58",
+  title: "Jason Riley — Speaker · Coach · Champion · Author",
   description:
-    "Eleven seasons up front. One Grey Cup. Now I coach the kids who play the position nobody clips — and tell the rest of the story in Taming Mad Dog.",
+    "Former Hamilton Tiger-Cat, 1986 Grey Cup champion, author of Taming Mad Dog, and speaker on youth empowerment, anti-bullying, resilience, physical literacy, and team culture.",
   openGraph: {
-    title: "Jason Riley — Coach · Champion · Author",
+    title: "Jason Riley — Speaker · Coach · Champion · Author",
     description:
-      "Eleven seasons up front. One Grey Cup. Now coaching, writing, and telling the rest of the story.",
+      "Former Hamilton Tiger-Cat, 1986 Grey Cup champion, author, coach, and speaker on youth empowerment, anti-bullying, resilience, physical literacy, and team culture.",
     type: "website",
   },
 };
