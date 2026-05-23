@@ -10,6 +10,9 @@ export const metadata = {
   title: "Up-Front Lineman Camp '26 — Hamilton, Ontario",
   description:
     "Three days. Five drills. No skill-position guys. We teach you how to win at the line of scrimmage.",
+  alternates: {
+    canonical: "/camp",
+  },
 };
 
 export default function CampPage() {

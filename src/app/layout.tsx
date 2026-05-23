@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Anton, Oswald, Newsreader, DM_Mono } from "next/font/google";
+import JsonLd from "@/components/analytics/JsonLd";
 import SmoothScroll from "@/components/motion/SmoothScroll";
 import SiteNav from "@/components/chrome/SiteNav";
 import SiteFooter from "@/components/chrome/SiteFooter";
 import Banner from "@/components/chrome/Banner";
+import { siteJsonLd, siteUrl } from "@/data/schema";
 import "./globals.css";
 
 // Condensed display — Anton ships only at 400.
@@ -40,14 +43,33 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Jason Riley — Speaker · Coach · Champion · Author",
   description:
     "Former Hamilton Tiger-Cat, 1986 Grey Cup champion, author of Taming Mad Dog, and speaker on youth empowerment, anti-bullying, resilience, physical literacy, and team culture.",
+  icons: {
+    icon: "/images/brand/logo-mark.svg",
+  },
   openGraph: {
     title: "Jason Riley — Speaker · Coach · Champion · Author",
     description:
       "Former Hamilton Tiger-Cat, 1986 Grey Cup champion, author, coach, and speaker on youth empowerment, anti-bullying, resilience, physical literacy, and team culture.",
+    url: "/",
+    siteName: "Jason Riley",
+    images: [
+      {
+        url: "/images/photos/jason-riley-hero-headshot-desktop.png",
+        alt: "Jason Riley wearing a Hamilton Tiger-Cats alumni cap",
+      },
+    ],
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jason Riley — Speaker · Coach · Champion · Author",
+    description:
+      "Former Hamilton Tiger-Cat, 1986 Grey Cup champion, author, coach, and speaker on youth empowerment, anti-bullying, resilience, physical literacy, and team culture.",
+    images: ["/images/photos/jason-riley-hero-headshot-desktop.png"],
   },
 };
 
@@ -62,11 +84,13 @@ export default function RootLayout({
       className={`${anton.variable} ${oswald.variable} ${newsreader.variable} ${dmMono.variable}`}
     >
       <body>
+        <JsonLd id="site-schema" data={siteJsonLd} />
         <SmoothScroll />
         <Banner />
         <SiteNav />
         {children}
         <SiteFooter />
+        {process.env.VERCEL ? <Analytics /> : null}
       </body>
     </html>
   );

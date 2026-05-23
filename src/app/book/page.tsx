@@ -12,6 +12,9 @@ export const metadata = {
   title: "Taming Mad Dog — A Football Memoir · Jason Riley",
   description:
     "By Jason Riley. A football memoir about the trenches, bullying prevention, mental health, resilience, and purpose.",
+  alternates: {
+    canonical: "/book",
+  },
 };
 
 export default function BookPage() {

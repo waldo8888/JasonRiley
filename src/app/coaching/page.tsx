@@ -10,6 +10,9 @@ export const metadata = {
   title: "Speaking · Coaching · Clinics — Jason Riley",
   description:
     "Bring Jason Riley in for youth empowerment, anti-bullying, resilience, physical literacy, team culture, and football clinics.",
+  alternates: {
+    canonical: "/coaching",
+  },
 };
 
 export default function CoachingPage() {

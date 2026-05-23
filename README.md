@@ -15,6 +15,9 @@ This is the pitch-demo build — a full multi-page site with cinematic scroll ch
 | Smooth scroll | Lenis |
 | Animation | Framer Motion (scroll-driven reveals, SplitText, StatCounter, SectionWipe) |
 | Images | `next/image` |
+| Analytics | Vercel Web Analytics + booking inquiry conversion event |
+
+Node is pinned to **22.x** via `package.json#engines` and `.nvmrc` so local installs match the Vercel runtime.
 
 ## Design system
 
@@ -55,6 +58,7 @@ Old-school CFL almanac × coach's playbook × memoir warmth. Tiger gold accent o
 ## Run
 
 ```bash
+nvm use
 npm install
 npm run dev                      # http://localhost:3000 (3001 if 3000 busy)
 ```
@@ -62,7 +66,10 @@ npm run dev                      # http://localhost:3000 (3001 if 3000 busy)
 ## Status
 
 - ✅ All five routes compile and serve
+- ✅ ESLint runs through the ESLint CLI flat config
+- ✅ Structured data covers Person, Organization, Book, Website, and speaking service entities
+- ✅ Booking form records a privacy-safe Vercel Analytics conversion event
 - ✅ Real photos wired (JOGO #58, UBC #76, McMaster sideline/dome/O-line, locker-room interview, real *Taming Mad Dog* cover)
 - ⏳ Real client photos & domain: still needed before launch
-- ⏳ Booking form is UI-only — backend not wired
+- ⏳ Booking form lead delivery backend is not wired yet
 - ⏳ Camp page is a teaser within the personal site; the full Up-Front kit from the design bundle is a sibling deliverable, not yet ported

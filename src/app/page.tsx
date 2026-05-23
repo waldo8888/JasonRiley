@@ -9,6 +9,12 @@ import SectionHead from "@/components/atoms/SectionHead";
 import Button from "@/components/atoms/Button";
 import ChapterIndicator from "@/components/chrome/ChapterIndicator";
 
+export const metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
+
 const chapters = [
   { id: "hero", label: "Mad Dog" },
   { id: "record", label: "The Record" },

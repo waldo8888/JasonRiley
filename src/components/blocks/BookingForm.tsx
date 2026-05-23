@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { track } from "@vercel/analytics/react";
 import Overline from "@/components/atoms/Overline";
 import Button from "@/components/atoms/Button";
 
@@ -27,6 +28,14 @@ export default function BookingForm() {
     <form
       onSubmit={(e) => {
         e.preventDefault();
+        const formData = new FormData(e.currentTarget);
+
+        track("booking_inquiry_submitted", {
+          ask: String(formData.get("ask") ?? "Unknown"),
+          organization_provided: Boolean(String(formData.get("org") ?? "").trim()),
+          message_length: String(formData.get("message") ?? "").trim().length,
+        });
+
         setSubmitted(true);
       }}
       className="bg-paper-bright border border-ink-900 p-6 sm:p-8 max-w-[560px]"
@@ -38,17 +47,23 @@ export default function BookingForm() {
 
       <div className="grid sm:grid-cols-2 gap-4">
         <Field label="Your Name">
-          <input className={inputClasses} name="name" autoComplete="name" />
+          <input className={inputClasses} name="name" autoComplete="name" required />
         </Field>
         <Field label="Organization">
           <input className={inputClasses} name="org" autoComplete="organization" />
         </Field>
       </div>
       <Field label="Email">
-        <input className={inputClasses} type="email" name="email" autoComplete="email" />
+        <input
+          className={inputClasses}
+          type="email"
+          name="email"
+          autoComplete="email"
+          required
+        />
       </Field>
       <Field label="What's the ask?">
-        <select className={inputClasses} name="ask" defaultValue="Keynote / speaking">
+        <select className={inputClasses} name="ask" defaultValue="Keynote / speaking" required>
           <option>Keynote / speaking</option>
           <option>Coaching clinic</option>
           <option>Up-Front Camp inquiry</option>
@@ -57,10 +72,10 @@ export default function BookingForm() {
         </select>
       </Field>
       <Field label="Tell me about the event">
-        <textarea className={inputClasses} rows={4} name="message" />
+        <textarea className={inputClasses} rows={4} name="message" required />
       </Field>
 
-      <Button>Send the note →</Button>
+      <Button type="submit">Send the note →</Button>
     </form>
   );
 }

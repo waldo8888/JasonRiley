@@ -11,6 +11,9 @@ export const metadata = {
   title: "About — Jason Riley",
   description:
     "The long way around. UBC to Hamilton. Eleven seasons. McMaster. The book. The board.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 export default function AboutPage() {
