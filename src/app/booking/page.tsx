@@ -7,15 +7,15 @@ import BookingForm from "@/components/blocks/BookingForm";
 import { speakingTiles, recentAppearances } from "@/data/career";
 
 export const metadata = {
-  title: "Speaking · Coaching · Clinics — Jason Riley",
+  title: "Booking · Speaking · Clinics — Jason Riley",
   description:
-    "Bring Jason Riley in for youth empowerment, anti-bullying, resilience, physical literacy, team culture, and football clinics.",
+    "Book Jason Riley for youth empowerment, anti-bullying, resilience, physical literacy, team culture, and football clinics.",
   alternates: {
-    canonical: "/coaching",
+    canonical: "/booking",
   },
 };
 
-export default function CoachingPage() {
+export default function BookingPage() {
   return (
     <Section noBorder>
       <Reveal>

@@ -71,7 +71,7 @@ export default function HomePage() {
           overline="Speaking & Press"
           title="The Work Now"
           action={
-            <Button kind="ghost" href="/coaching#recent">
+            <Button kind="ghost" href="/booking#recent">
               Recent →
             </Button>
           }

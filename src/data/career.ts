@@ -29,7 +29,7 @@ export const columns = [
     body:
       "A practical session for teachers, coaches, recreation leaders, and staff who work with young people.",
     meta: "Book Jason",
-    href: "/coaching#book",
+    href: "/booking#book",
   },
   {
     tag: "Podcast · Episode 58",

@@ -7,7 +7,7 @@ export const navLinks: NavLink[] = [
   { id: "book", label: "The Book", href: "/book" },
   { id: "camp", label: "Camp", href: "/camp" },
   { id: "about", label: "About", href: "/about" },
-  { id: "coaching", label: "Coaching", href: "/coaching" },
+  { id: "booking", label: "Booking", href: "/booking" },
 ];
 
 export const banner = {
@@ -22,7 +22,7 @@ export const footerColumns: { title: string; items: { label: string; href: strin
     items: [
       { label: "Taming Mad Dog", href: "/book" },
       { label: "Up-Front Camp", href: "/camp" },
-      { label: "Speaking", href: "/coaching" },
+      { label: "Speaking", href: "/booking" },
       { label: "CFLAA Board", href: "https://www.cflaa.ca/board-of-directors/" },
     ],
   },
@@ -30,7 +30,7 @@ export const footerColumns: { title: string; items: { label: string; href: strin
     title: "The Story",
     items: [
       { label: "Career", href: "/about" },
-      { label: "Recent", href: "/coaching#recent" },
+      { label: "Recent", href: "/booking#recent" },
       { label: "Book", href: "/book" },
       { label: "Speaking Topics", href: "/#columns" },
     ],
@@ -38,10 +38,10 @@ export const footerColumns: { title: string; items: { label: string; href: strin
   {
     title: "Reach Out",
     items: [
-      { label: "Booking", href: "/coaching#book" },
+      { label: "Booking", href: "/booking#book" },
       { label: "Camp Inquiry", href: "/camp" },
-      { label: "Media", href: "/coaching#recent" },
-      { label: "Book Event", href: "/coaching#book" },
+      { label: "Media", href: "/booking#recent" },
+      { label: "Book Event", href: "/booking#book" },
     ],
   },
 ];

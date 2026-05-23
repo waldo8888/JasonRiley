@@ -2,7 +2,7 @@ export const siteUrl = "https://jason-riley.vercel.app";
 
 const heroImage = `${siteUrl}/images/photos/jason-riley-hero-headshot-desktop.png`;
 const bookUrl = `${siteUrl}/book`;
-const speakingUrl = `${siteUrl}/coaching`;
+const speakingUrl = `${siteUrl}/booking`;
 const bookSalesUrl =
   "https://www.lulu.com/shop/jason-riley/taming-mad-dog/paperback/product-v625mk.html";
 
